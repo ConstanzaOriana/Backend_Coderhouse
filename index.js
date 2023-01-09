@@ -53,6 +53,14 @@ class ProductManager{
 
 const newProductManager = new ProductManager();
 
+const accessProducts = newProductManager.getProducts();
+
 newProductManager.addProduct("Producto prueba","Este es un producto de prueba",200,"Sin imagen","ABC123",25);
 
-const accessProductManager = newProductManager.getProductById(1);
+newProductManager.getProducts();
+
+newProductManager.addProduct("Producto prueba","Este es un producto de prueba",200,"Sin imagen","ABC123",25);
+
+const findProductManager = newProductManager.getProductById(1);
+
+
