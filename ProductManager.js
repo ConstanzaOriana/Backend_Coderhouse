@@ -127,7 +127,7 @@ class ProductManager{
 (
     async () => {
 
-        const instanceManager = new ProductManager('./products.txt');
+        const instanceManager = new ProductManager('./products.json');
 
         const viewProducts = await instanceManager.getProducts();
         console.log(viewProducts);
